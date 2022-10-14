@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>0xbunny's Homepage</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/navigation.css" rel="stylesheet" type="text/css">
+  <link href="css/background.css" rel="stylesheet" type="text/css">
+  <link href="img/favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <div class="container">
+    <div class="element">
+      <img draggable="false" src="img/bunny.png"></img>
+      <h1>0xbunny</h1>
+
+      <section>
+        <ul>
+        <li title="GitHub"><a href="https://github.com/0xC03LH0"><i class="fab fa-github"></i></a></li>
+        <li title="YouTube"><a href="https://www.youtube.com/channel/UC3te_UR2TeWFL1OfaK2KFGg"><i class="fab fa-youtube"></i></a></li>
+        <li title="Discord" onclick="alert('0xBunny#8387')"><a href="#"><i class="fab fa-discord"></i></a></li>
+        <li title="Gmail"><a href="mailto:john.frabetti@gmail.com"><i class="far fa-envelope"></i></a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="navigationContainer">
+      <div class="navigation">
+        <ul></ul>
+      </div>
+      <div class="toggle"></div>
+    </div>
+  </div>
+</body>
+
+<script>
+  document.querySelector('.toggle').onclick = function() {
+    this.classList.toggle('active');
+    document.querySelector('.navigation').classList.toggle('active');
+    document.querySelector('.navigationContainer').classList.toggle('active');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/31249f53f3.js" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>
